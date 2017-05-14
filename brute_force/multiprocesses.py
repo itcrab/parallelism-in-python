@@ -43,4 +43,5 @@ def parralel_brute_force(hash_value, alphabet, length):
         worker.join()
 
 
-print(parralel_brute_force(md5('zzzzz'.encode('ascii')).hexdigest(), ascii_lowercase, 5))
+if __name__ == '__main__':
+    print(parralel_brute_force(md5('zzzzz'.encode('ascii')).hexdigest(), ascii_lowercase, 5))
